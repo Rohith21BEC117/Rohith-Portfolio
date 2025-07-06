@@ -334,7 +334,7 @@ margin: 0 auto;
     overflow: hidden;
   }
   .maingrid{
-  	gap: 2rem;
+  	gap: 3.5rem;
   }
   .grid2{
   	display: grid;
