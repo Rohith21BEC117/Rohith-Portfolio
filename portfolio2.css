@@ -1,9 +1,8 @@
 body{
 	margin:0;
 	padding: 2rem;
-	  background: linear-gradient( #444444, #ffffff);
-	  
-	  background-attachment: fixed;
+	background: linear-gradient( #444444, #ffffff);
+	background-attachment: fixed;
 }
 .container{
 	 background: linear-gradient( #dbe9f4, #fdfdfd);
@@ -14,6 +13,7 @@ body{
 	border-radius: 25px;
 	margin: 20px auto;
 	background-attachment: fixed;
+	box-sizing: border-box;
 }
 header{
 	display: flex;
@@ -58,11 +58,12 @@ header{
 .work{
 	background-color: black;
 	width: 150px;
-	height: 20px;
+	
 	padding: 20px;
 	color: white;
 	font-weight: bold;
 	border-radius: 20px;
+	font-size: 1rem;
 }
 .work:hover,.book:hover,.contact:hover{
 	background-color: #0056b3;   /* Darker blue */
@@ -181,7 +182,7 @@ background: steelblue;
 .grid2{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3.5rem;
   
 }
 .rightgridleft,.rightgridright{
@@ -324,79 +325,109 @@ margin: 0 auto;
 	background-color: #0056b3;   /* Darker blue */
   transform: scale(1.55);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* For tablets (<= 992px) */
-@media (max-width: 992px) {
-  .container {
-    width: 95%;
+@media (max-width: 900px){
+.container {
+		max-width: 900px;
+	width: 100%;
+    padding: 10px;
+    margin: 1rem auto;
+    overflow: hidden;
+  }
+  .maingrid{
+  	gap: 1rem;
+  }
+  .grid2{
+  	display: grid;
+  	grid-template-columns: 1fr;
+  }
+.proffession{
+  	font-size: 1.5rem;
+  }
+  .left{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+  }
+  .work{
+    font-size: 14px;
     padding: 10px;
   }
-
-  .grid2 {
-    grid-template-columns: 1fr;
+  .myphoto{
+  	max-width: 200px;
+  }
+  .welcome {
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
   }
 
-  .rightgridleft, .rightgridright, .lastgridscholar {
-    width: 100%;
-  }
+  .work:hover,.book:hover,.contact:hover{
+	background-color: #0056b3;   /* Darker blue */
+  transform: scale(1.2);
 
-  .proffession {
-    font-size: 2.5rem;
-  }
-
-  .mission {
-    font-size: 1.5rem;
-  }
 }
+}
+
+
+
 
 /* For mobile phones (<= 600px) */
 @media (max-width: 600px) {
-  .container {
+	body{
+		margin:0;
+		padding:0;
+	}
+	.container {
+		max-width: 600px;
+	width: 100%;
     padding: 10px;
+    margin: 1rem auto;
+   
+  }
+  .proffession{
+  	font-size: 2rem;
+  }
+  
+  header {
+    flex-direction: column;
+    text-align: center;
   }
 
   .maingrid {
     grid-template-columns: 1fr;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 
   .right {
     grid-template-columns: 1fr;
-    justify-items: center;
   }
 
-  .proffession {
-    font-size: 2rem;
+  .social-media {
+    grid-column: 1;
     text-align: center;
   }
 
-  .quotes, .contact {
-    text-align: center;
-  }
-
-  .contact {
-    display: block;
-    margin: 1rem auto;
+  .myphoto {
+    width: 80%;
   }
 
   .welcome {
     font-size: 2rem;
-    padding: 10px;
   }
 
-  .styleimage {
-    height: auto;
+  .certificate, .assist, .project {
+    font-size: 1.2rem;
+  }
+
+  .quotes {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .proffession {
+    font-size: 2rem;
   }
 }
 
