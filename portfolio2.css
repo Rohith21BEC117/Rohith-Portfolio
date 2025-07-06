@@ -362,44 +362,41 @@ margin: 0 auto;
 
 /* For mobile phones (<= 600px) */
 @media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
+  .container {
+    padding: 10px;
   }
 
   .maingrid {
     grid-template-columns: 1fr;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   .right {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
-  .social-media {
-    grid-column: 1;
+  .proffession {
+    font-size: 2rem;
     text-align: center;
   }
 
-  .myphoto {
-    width: 80%;
+  .quotes, .contact {
+    text-align: center;
+  }
+
+  .contact {
+    display: block;
+    margin: 1rem auto;
   }
 
   .welcome {
     font-size: 2rem;
+    padding: 10px;
   }
 
-  .certificate, .assist, .project {
-    font-size: 1.2rem;
-  }
-
-  .quotes {
-    font-size: 16px;
-  }
-}
-@media (max-width: 600px) {
-  .proffession {
-    font-size: 2rem;
+  .styleimage {
+    height: auto;
   }
 }
 
