@@ -1,6 +1,6 @@
 body{
 	margin:0;
-	padding: 2rem;
+	padding: 0;
 	background: linear-gradient( #444444, #ffffff);
 	background-attachment: fixed;
 }
@@ -11,7 +11,7 @@ body{
 	min-height: 100vh;
 	padding: 20px;
 	border-radius: 25px;
-	margin: 20px auto;
+	margin: 0 auto;
 	background-attachment: fixed;
 	box-sizing: border-box;
 }
@@ -91,7 +91,7 @@ header{
   height: auto;
   border-radius: 20px;
   margin: 0;
-   transition: transform 0.4s ease;
+   ransition: transform 0.4s ease;
   cursor: pointer;
 }
 .myphoto:hover {
@@ -100,7 +100,7 @@ header{
 .right{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 0.5rem;
+	gap: 0.2rem;
 }
 .social-media{
 	width: 300px;
@@ -126,10 +126,10 @@ header{
 	color: white;
 	font-weight: bold;
 	margin-bottom: 0;
-	height: 50px;
+	box-sizing: content-box;
+	display: flex;
+	justify-content: evenly-spaced;
 	background: linear-gradient(to right, #001f3f 70%);
-	position: relative;
-	bottom: 50px;
 	padding: 20px;
 	border-radius: 20px;
 	overflow: hidden;             /* Hides the overflow text as it animates */
@@ -137,14 +137,12 @@ header{
   /* Creates the blinking "cursor" */
   width: 0;                     /* Initial width: 0 to hide text */
   animation: 
-    typing 3s steps(13) forwards,   /* Typing animation over 3s */
-    blink 0.5s step-end infinite;
-	
+    typing 3s steps(13) forwards,
+    blink 0.5s step-end infinite;   /* Typing animation over 3s */
 }
-
 @keyframes typing {
   from { width: 0; }
-  to { width: 12ch; } /* Reveal 13 characters — adjust to match your text length */
+  to { width: 13ch; } /* Reveal 13 characters — adjust to match your text length */
 }
 
 @keyframes blink {
@@ -226,10 +224,7 @@ max-width: 400px;
   font-weight: bold;
 
 }
-.align{
-	position: relative;
-	top: 30px;
-}
+
 .flexbox{
    display: flex;
    align-items: center;
@@ -325,110 +320,346 @@ margin: 0 auto;
 	background-color: #0056b3;   /* Darker blue */
   transform: scale(1.55);
 }
-@media (max-width: 900px){
-.container {
-		max-width: 900px;
-	width: 100%;
-    padding: 10px;
-    margin: 1rem auto;
-    overflow: hidden;
-  }
-  .maingrid{
-  	gap: 3.5rem;
-  }
-  .grid2{
-  	display: grid;
-  	grid-template-columns: 1fr;
-  }
-.proffession{
-  	font-size: 1.5rem;
-  }
-  .left{
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-  }
-  .work{
-    font-size: 14px;
-    padding: 10px;
-  }
-  .myphoto{
-  	max-width: 200px;
-  }
-  .welcome {
-    padding: 5px 10px;
-    margin: 10px 0;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-  }
 
-  .work:hover,.book:hover,.contact:hover{
+@media (max-width: 320px){
+	*{
+		box-sizing: border-box;
+		
+	}
+.container{
+
+	  width: 100%;
+    max-width: 100%;     /* override desktop max-width */
+    margin: 0;           /* remove auto-centering */
+    padding: 10px;
+    border-radius: 0;
+    overflow: hidden;	
+}
+header{
+	padding: 1px;
+	border-radius: 50px;
+}
+.name::first-letter{
+	font-size: 2rem;
+}
+.book{
+	padding: 12px;
+	border-radius: 15px;
+		
+}
+.name{
+	margin-left: 30px;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+.maingrid{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin:  1rem;
+	gap: 20px;
+}
+.circle{
+   display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color:white;
+}
+.work{
+	background-color: black;
+	width: 70px;
+	padding: 3px;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	font-size: 0.5rem;
+	text-align: center;
+
+}
+.work:hover,.book:hover,.contact:hover{
 	background-color: #0056b3;   /* Darker blue */
   transform: scale(1.2);
 
 }
+.proffession{
+	font-size: 1rem;
+	font-family: cursive;
+	margin: 10px 0;
+}
+.quotes{
+ color: orangered;
+ font-size: 10px;
+ font-family: sans-serif;
+}
+.contact{
+	background-color: black;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px;
+	position: relative;
+	font-size: 12px;
+
+}
+.myphoto{
+	width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto;
+   transition: transform 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  left: 40%;
+ 
+}
+.myphoto:hover {
+  transform: scale(1.1); /* Slight zoom */
+}
+.right{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5rem;
+}
+.social-media{
+	width: 150px;
+	display: flex;
+	justify-content: evenly-spaced;
+	position: relative;
+	bottom: 45px;
+  right: 60px;
+}
+.twitter:hover,.instagram:hover,.linkedin:hover{
+	transform: scale(1.1);
+}
+.size{
+	width: 25px;
+	height: 20px;
+	background-color: whitesmoke;
+	padding: 5px;
+	border-radius: 50%;
+	margin: 2px;
+
+}
+.welcome{
+	font-size: 20px;
+	padding: 10px;
+	justify-self: center;
+	color: white;
+	font-weight: bold;
+	margin: 0;
+	background: linear-gradient(to right, #001f3f 70%);
+	border-radius: 20px;
+	overflow: hidden;             /* Hides the overflow text as it animates */
+  white-space: nowrap;          /* Prevents the text from wrapping */
+  /* Creates the blinking "cursor" */
+  width: 0;                     /* Initial width: 0 to hide text */
+  animation: 
+    typing 3s steps(13) forwards,   /* Typing animation over 3s */
+    blink 0.5s step-end infinite;
+	
 }
 
+@keyframes typing {
+  from { width: 0; }
+  to { width: 12ch; } /* Reveal 13 characters — adjust to match your text length */
+}
 
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.mission{
+background: steelblue;
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 10px;
+}
 
+.mission:hover{
+	background-color: white;
+	color: black;
+}
+.leftgrid{
+	display: grid;
+	grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
 
-/* For mobile phones (<= 600px) */
-@media (max-width: 600px) {
-	body{
-		margin:0;
-		padding:0;
-	}
-	.container {
-		max-width: 600px;
-	width: 100%;
-    padding: 10px;
-    margin: 1rem auto;
-   
-  }
-  .proffession{
-  	font-size: 2rem;
-  }
+.assist,.project,.certificate{
+	width: 150px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	
+}
+.grid2{
+	display: grid;
+	grid-template-columns: 1fr;
   
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .maingrid {
-    grid-template-columns: 1fr;
-    margin: 2rem 0;
-  }
-
-  .right {
-    grid-template-columns: 1fr;
-  }
-
-  .social-media {
-    grid-column: 1;
-    text-align: center;
-  }
-
-  .myphoto {
-    width: 80%;
-  }
-
-  .welcome {
-    font-size: 2rem;
-  }
-
-  .certificate, .assist, .project {
-    font-size: 1.2rem;
-  }
-
-  .quotes {
-    font-size: 16px;
-  }
+  
 }
-@media (max-width: 600px) {
-  .proffession {
-    font-size: 2rem;
-  }
+.rightgridleft,.rightgridright{
+	background-color: white;
+	width: 100%;
+max-width: 400px;
+	border-radius: 20px;
+	padding: 20px;
+	color: black;
+	font-size: 20px;
+	transition: all 0.3s ease;
+	line-height: 1.5;
+
 }
+.rightgridleft p,
+.rightgridright p {
+  text-align: justify;
+}
+.lastgridscholar{
+	background-color: white;
+	width: 90%;
+	border-radius: 20px;
+	padding: 20px;
+	color: black;
+	font-size: 20px;
+	transition: all 0.3s ease;
+	line-height: 1.5;
+	grid-column: 1 / -1; /* span both columns */
+  justify-self: center;
+}
+.twitter{
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	
+}
+.rightgridleft:hover,.rightgridright:hover,.lastgridscholar:hover{
+	background-color:	lightgrey;
+  transform: scale(1.05);
+  color: steelblue;
+  font-weight: bold;
+
+}
+.align{
+	position: relative;
+	top: 30px;
+}
+.flexbox{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.number{
+	font-size: 2rem;
+	color: darkred;
+	
+}
+.number1{
+	position: relative;
+	bottom: 20px;
+}
+.number2{
+	position: relative;
+	bottom: 15px;
+}
+.tributepage{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	background: black;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+.tributepage:hover{
+	background-color: white;
+	color: black;
+}
+.flexlink{
+	display:flex;
+flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.styleimage{
+	width: 100%;
+  border: 3px solid #ccc; /* Light gray border */
+  border-radius: 10px;     /* Optional: rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Soft drop shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height:200px;
+  margin: 0;
+}
+.scholar-img{
+	width: 75%;
+	 border: 3px solid #ccc; /* Light gray border */
+  border-radius: 10px;     /* Optional: rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);/* Soft drop shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.certificate{
+	position: relative;
+	left: -25px;
+	font-size: 1.65rem;
+}
+.hire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  font-size: 15px;
+background: white;
+  color: ghostwhite;
+  font-weight: bold;
+  font-family: cursive;
+  border-radius: 25px;
+margin: 0 auto;
+
+  padding: 1rem; /* Add vertical space */
+}
+
+.hire:hover{
+	
+	transform: scale(1.05);
+}
+.hire h1 {
+  margin: 0;
+  padding: 1rem;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  border-radius: 15px;
+
+}
+
+.hiremsg {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 6px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  	font-family: monospace	;
+
+}
+.hiremsg:hover{
+	background-color: #0056b3;   /* Darker blue */
+  transform: scale(1.55);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
