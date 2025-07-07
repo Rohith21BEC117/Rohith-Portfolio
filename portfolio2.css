@@ -287,9 +287,7 @@ flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .certificate{
-	position: relative;
-	left: -25px;
-	font-size: 1.65rem;
+	font-size: 1.45rem;
 }
 .hire {
   display: flex;
@@ -344,6 +342,56 @@ margin: 0 auto;
 
 
 
+@media (max-width: 1025px)
+{
+	*{
+		box-sizing: border-box;
+		
+	}
+	body {
+    overflow-x: hidden;
+  }
+
+.container{
+	  width: 100%;
+    max-width: 100%;     /* override desktop max-width */
+    margin: 0;           /* remove auto-centering */
+    padding: 10px;
+    border-radius: 0;
+    overflow-x:hidden;
+   	
+}
+.proffession{
+	font-size: 4rem;
+	font-family: poppins,sansserif;
+	margin: 0;
+}
+}
+@media (max-width: 769px)
+{
+	*{
+		box-sizing: border-box;
+		
+	}
+	body {
+    overflow-x: hidden;
+  }
+
+.container{
+	  width: 100%;
+    max-width: 100%;     /* override desktop max-width */
+    margin: 0;           /* remove auto-centering */
+    padding: 10px;
+    border-radius: 0;
+    overflow-x:hidden;
+   	
+}
+.proffession{
+	font-size: 3rem;
+	font-family: poppins,sansserif;
+	margin: 0;
+}
+}
 
 
 
@@ -353,8 +401,7 @@ margin: 0 auto;
 
 
 
-
-@media(max-width:500px){
+@media(max-width:426px){
 	*{
 		box-sizing: border-box;
 		
@@ -497,9 +544,6 @@ header{
 	justify-self: center;
 	color: white;
 	font-weight: bold;
-	position: relative;
-	right: 15%;
-	margin-bottom: 0;
 	box-sizing: content-box;
 	display: flex;
 	justify-content: evenly-spaced;
@@ -644,8 +688,7 @@ flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .certificate{
-	position: relative;
-	left: -25px;
+	margin: 0 auto;
 	font-size: 1.65rem;
 }
 .hire {
@@ -724,7 +767,7 @@ margin: 0 auto;
 
 
 
-@media (max-width: 320px){
+@media (max-width: 321px){
 	*{
 		box-sizing: border-box;
 		
@@ -763,6 +806,12 @@ header{
 	margin:  0.5rem;
 	gap: 5px;
 }
+.left{
+	display: flex;
+	flex-direction: column;
+	justify-content: evenly-spaced;
+	gap: 5px;
+}
 .circle{
    display: inline-block;
 	width: 5px;
@@ -771,9 +820,9 @@ header{
 	background-color:white;
 }
 .work{
-	background-color: black;
-	width: 70px;
-	padding: 3px;
+	background-color: orangered;
+	width: 85px;
+	padding: 7px;
 	color: white;
 	font-weight: bold;
 	border-radius: 10px;
@@ -806,14 +855,14 @@ header{
 
 }
 .myphoto{
-	width: 200px;
+	width: 160px;
   height: auto;
   border-radius: 20px;
   margin: 0 auto;
    transition: transform 0.4s ease;
   cursor: pointer;
   position: relative;
-  left: 40%;
+  left: 20%;
  
 }
 .myphoto:hover {
@@ -829,8 +878,8 @@ header{
 	display: flex;
 	justify-content: evenly-spaced;
 	position: relative;
-	bottom: 45px;
-  right: 60px;
+	top: 40px;
+	left: 40px;
 }
 .twitter:hover,.instagram:hover,.linkedin:hover{
 	transform: scale(1.1);
@@ -845,12 +894,13 @@ header{
 
 }
 .welcome{
-	font-size: 20px;
-	padding: 10px;
+	font-size: 10px;
+	padding: 5px;
 	justify-self: center;
 	color: white;
 	font-weight: bold;
-	margin: 0;
+	padding:20x;
+	margin: 0 auto;
 	background: linear-gradient(to right, #001f3f 70%);
 	border-radius: 20px;
 	overflow: hidden;             /* Hides the overflow text as it animates */
@@ -858,14 +908,14 @@ header{
   /* Creates the blinking "cursor" */
   width: 0;                     /* Initial width: 0 to hide text */
   animation: 
-    typing 3s steps(13) forwards,   /* Typing animation over 3s */
+    typing 3s steps(43) forwards,   /* Typing animation over 3s */
     blink 0.5s step-end infinite;
 	
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 12ch; } /* Reveal 13 characters — adjust to match your text length */
+  to { width: 24.5ch; } /* Reveal 13 characters — adjust to match your text length */
 }
 
 @keyframes blink {
