@@ -57,7 +57,7 @@ header{
 	background-color:white;
 }
 .work{
-	background-color: black;
+	background-color: orangered;
 	width: 150px;
 	
 	padding: 20px;
@@ -106,8 +106,12 @@ header{
 }
 @media (min-width: 901px) {
   .right {
-    margin-top: 120px;
+    margin-top: 70px;
     margin-left: 50px;
+  }
+  .welcome{
+  	position: relative;
+  	right: 20px;
   }
 }
 
@@ -132,26 +136,28 @@ header{
 	font-size: 55px;
 	grid-column: 1 / -1;
 	justify-self: center;
+		text-align: center;
 	color: white;
 	font-weight: bold;
-	margin-bottom: 0;
+	margin: 0;
+
 	box-sizing: content-box;
 	display: flex;
 	justify-content: evenly-spaced;
 	background: linear-gradient(to right, #001f3f 70%);
-	padding: 20px;
+	padding: 10px;
 	border-radius: 20px;
 	overflow: hidden;             /* Hides the overflow text as it animates */
   white-space: nowrap;          /* Prevents the text from wrapping */
   /* Creates the blinking "cursor" */
   width: 0;                     /* Initial width: 0 to hide text */
   animation: 
-    typing 3s steps(13) forwards,
+    typing 3s steps(53) forwards,
     blink 0.5s step-end infinite;   /* Typing animation over 3s */
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 13ch; } /* Reveal 13 characters — adjust to match your text length */
+  to { width: 25.5ch; } /* Reveal 13 characters — adjust to match your text length */
 }
 
 @keyframes blink {
@@ -414,7 +420,7 @@ header{
 	background-color:white;
 }
 .work{
-	background-color: black;
+	background-color: orangered; !important;
 	width: 170px;
 	
 	padding: 10px;
@@ -425,7 +431,7 @@ header{
 }
 .work:hover,.book:hover,.contact:hover{
 	background-color: #0056b3;   /* Darker blue */
-  transform: scale(1.55);
+  transform: scale(1.25);
 
 }
 .proffession{
@@ -505,12 +511,12 @@ header{
   /* Creates the blinking "cursor" */
   width: 0;                     /* Initial width: 0 to hide text */
   animation: 
-    typing 3s steps(13) forwards,
+    typing 3s steps(53) forwards,
     blink 0.5s step-end infinite;   /* Typing animation over 3s */
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 13ch; } /* Reveal 13 characters — adjust to match your text length */
+  to { width: 25.5ch; } /* Reveal 13 characters — adjust to match your text length */
 }
 
 @keyframes blink {
