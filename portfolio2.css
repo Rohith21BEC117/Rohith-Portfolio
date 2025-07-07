@@ -516,7 +516,7 @@ header{
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 25.5ch; } /* Reveal 13 characters — adjust to match your text length */
+  to { width: 24.5ch; } /* Reveal 13 characters — adjust to match your text length */
 }
 
 @keyframes blink {
