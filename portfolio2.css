@@ -546,7 +546,7 @@ header{
 	display: flex;
 	justify-content: evenly-spaced;
 	background: linear-gradient(to right, #001f3f 70%);
-	padding: 10px;
+	padding: 5px;
 	border-radius: 20px;
 	overflow: hidden;             /* Hides the overflow text as it animates */
   white-space: nowrap;          /* Prevents the text from wrapping */
@@ -558,7 +558,7 @@ header{
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 24.5ch; } /* Reveal 13 characters — adjust to match your text length */
+  to { width: 25.5ch; } /* Reveal 13 characters — adjust to match your text length */
 }
 
 @keyframes blink {
@@ -902,7 +902,7 @@ header{
 	justify-self: center;
 	color: white;
 	font-weight: bold;
-	padding:20x;
+	padding:5x;
 	margin: 0 auto;
 	background: linear-gradient(to right, #001f3f 70%);
 	border-radius: 20px;
