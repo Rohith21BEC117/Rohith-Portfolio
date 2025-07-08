@@ -112,16 +112,14 @@ header{
 
 .welcome{
 	font-size: 55px;
-	grid-column: 1 / -1;
 	justify-self: center;
-		text-align: center;
+	text-align: center;
 	color: white;
 	font-weight: bold;
 	margin: 0;
 
 	box-sizing: content-box;
 	display: flex;
-	justify-content: evenly-spaced;
 	background: linear-gradient(to right, #001f3f 70%);
 	padding: 10px;
 	border-radius: 20px;
@@ -538,13 +536,11 @@ header{
 }
 .welcome{
 	font-size: 20px;
-	grid-column: 1 / -1;
 	justify-self: center;
 	color: white;
 	font-weight: bold;
 	box-sizing: content-box;
 	display: flex;
-	justify-content: evenly-spaced;
 	background: linear-gradient(to right, #001f3f 70%);
 	padding: 5px;
 	border-radius: 20px;
@@ -898,27 +894,25 @@ header{
 }
 .welcome{
 	font-size: 10px;
-	padding: 5px;
 	justify-self: center;
 	color: white;
 	font-weight: bold;
-	padding:5x;
-	margin: 0 auto;
+	box-sizing: content-box;
+	display: flex;
 	background: linear-gradient(to right, #001f3f 70%);
+	padding: 5px;
 	border-radius: 20px;
 	overflow: hidden;             /* Hides the overflow text as it animates */
   white-space: nowrap;          /* Prevents the text from wrapping */
   /* Creates the blinking "cursor" */
   width: 0;                     /* Initial width: 0 to hide text */
   animation: 
-    typing 3s steps(43) forwards,   /* Typing animation over 3s */
-    blink 0.5s step-end infinite;
-	
+    typing 3s steps(53) forwards,
+    blink 0.5s step-end infinite;   /* Typing animation over 3s */
 }
-
 @keyframes typing {
   from { width: 0; }
-  to { width: 24.5ch; } /* Reveal 13 characters — adjust to match your text length */
+  to { width: 25.5ch; } /* Reveal 13 characters — adjust to match your text length */
 }
 
 @keyframes blink {
