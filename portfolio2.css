@@ -98,18 +98,6 @@ header{
 .myphoto:hover {
   transform: scale(1.1); /* Slight zoom */
 }
-@media (min-width: 901px) {
-  .right {
-    margin-top: 70px;
-    margin-left: 50px;
-  }
-  .welcome{
-  	position: relative;
-  	right: 20px;
-  }
-}
-
-
 .welcome{
 	font-size: 55px;
 	justify-self: center;
