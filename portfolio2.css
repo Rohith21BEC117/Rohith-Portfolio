@@ -684,7 +684,7 @@ background: white;
   font-weight: bold;
   font-family: cursive;
   border-radius: 25px;
-margin: 0 auto;
+margin: 1rem auto;
 
   padding: 1rem; /* Add vertical space */
 }
