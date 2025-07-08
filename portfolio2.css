@@ -283,7 +283,7 @@ margin: 2rem auto;
 	
 	transform: scale(1.05);
 }
-.hire h1 {
+.together{
   margin: 0;
   padding: 2rem;
   background: linear-gradient(to right, #11998e, #38ef7d);
@@ -704,11 +704,11 @@ margin: 0 auto;
 	
 	transform: scale(1.05);
 }
-.hire h1 {
+.together{
   margin: 0;
-  padding: 1rem;
+  padding: 2rem;
   background: linear-gradient(to right, #11998e, #38ef7d);
-  border-radius: 15px;
+  border-radius: 30px;
 
 }
 
@@ -1070,14 +1070,13 @@ margin: 1rem auto;
 	
 	transform: scale(1.05);
 }
-.hire h1 {
+.together{
   margin: 0;
-  padding: 1rem;
+  padding: 2rem;
   background: linear-gradient(to right, #11998e, #38ef7d);
-  border-radius: 15px;
+  border-radius: 30px;
 
 }
-
 .hiremsg {
   margin-top: 0.5rem;
   font-size: 1rem;
