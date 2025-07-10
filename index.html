@@ -14,7 +14,10 @@
     <div class="container">
     <header>
       <h3 class="name">Rohith V</h3>
+      <div class="headerflex">
       <h4 class="book">Book a call</h4>
+      <button id="theme-toggle">🌞</button>
+    </div>
     </header>
   <main class="maingrid">
     <section class="left">
@@ -165,6 +168,21 @@ It stands as a proud milestone in my academic journey.</p>
     
   
 </div>
+<script type="text/javascript">
+  const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "🌙"; // Show moon in dark mode
+  } else {
+    toggleBtn.textContent = "🌞"; // Show sun in light mode
+  }
+});
+
+
+</script>
+
 
 </body>
 </html>
