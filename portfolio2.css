@@ -460,7 +460,7 @@ body.dark-mode #theme-toggle:active {
 
 
 
-@media(max-width:426px){
+@media(max-width:431px){
 	*{
 		box-sizing: border-box;
 		
